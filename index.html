@@ -17,24 +17,30 @@
     <div class="container">
       <div class="score-container">
         <h3>HOME</h3>
-        <div class="score-window">0</div>
+        <div class="score-window" id="home-score">0</div>
         <div class="adding-buttons">
-          <button class="adding-button" onClick="addNumber(1)">+1</button>
-          <button class="adding-button">+2</button>
-          <button class="adding-button">+3</button>
+          <button class="adding-button" onClick="addNumberHome(1)">+1</button>
+          <button class="adding-button" onClick="addNumberHome(2)">+2</button>
+          <button class="adding-button" onClick="addNumberHome(3)">+3</button>
         </div>
       </div>
       <div class="score-container">
         <h3>GUEST</h3>
-        <div class="score-window">0</div>
+        <div class="score-window" id="guest-score">0</div>
         <div class="adding-buttons">
-          <button class="adding-button">+1</button>
-          <button class="adding-button">+2</button>
-          <button class="adding-button">+3</button>
+          <button class="adding-button" onClick="addNumberGuest(1)">+1</button>
+          <button class="adding-button" onClick="addNumberGuest(2)">+2</button>
+          <button class="adding-button" onClick="addNumberGuest(3)">+3</button>
         </div>
       </div>
     </div>
-    <button class="reset-button">RESET GAME</button>
+    <button
+      class="reset-button"
+      id="reset-game-button"
+      onclick="location.reload()"
+    >
+      RESET GAME
+    </button>
     <script src="index.js"></script>
   </body>
 </html>
