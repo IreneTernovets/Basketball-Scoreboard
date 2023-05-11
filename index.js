@@ -1,7 +1,7 @@
-let homeScoreWindow = document.getElementById("home-score");
+const homeScoreWindow = document.getElementById("home-score");
 let homeScore = 0;
 
-let guestScoreWindow = document.getElementById("guest-score");
+const guestScoreWindow = document.getElementById("guest-score");
 let guestScore = 0;
 
 function addNumberHome(addArg) {
